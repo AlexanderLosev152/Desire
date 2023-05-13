@@ -1,7 +1,39 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'libs';
-@import 'global';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
 
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+  &__btn {
+    background: transparent;
+    border: none;
+    margin-left: 0;
+  }
+}
+.logo {
+  margin: 0 auto;
+}
+.menu {
+  &__list {
+    display: flex;
+    gap: 80px;
+  }
+  &__list-item {
 
+  }
+  &__list-link {
+  }
+}
+.wrapper {
+}
+.main {
+}
+.footer {
+}
