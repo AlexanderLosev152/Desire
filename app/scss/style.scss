@@ -14,7 +14,9 @@
   &__btn {
     background: transparent;
     border: none;
-    margin-left: 0;
+    padding: 0;
+    margin-left: 45px;
+    cursor: pointer;
   }
 }
 .logo {
@@ -26,14 +28,54 @@
     gap: 80px;
   }
   &__list-item {
-
   }
   &__list-link {
+    @extend %title-font;
+    color: rgba(54, 56, 56, 0.9);
+    line-height: 22px;
   }
 }
 .wrapper {
 }
 .main {
 }
+
+// footer
+
 .footer {
+  &__content {
+  }
+  &__inner {
+  }
+  &__info {
+  }
+  &__info-text {
+  }
+  &__info-email {
+  }
+  &__form {
+  }
+  &__social {
+  }
+  &__social-list {
+  }
+  &__social-link {
+  }
+  &__menu {
+  }
+  &__menu-list {
+  }
+  &__menu-link {
+  }
+  &__copyright {
+    background: $;
+  }
+}
+.title {
+}
+.footer {
+  &__form-input {
+  }
+  &__form-button {
+  }
 }
