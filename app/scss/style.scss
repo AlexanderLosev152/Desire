@@ -33,6 +33,71 @@
     line-height: 22px;
   }
 }
+
+// rightside__menu
+
+.rightside {
+  &__menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 694px;
+    width: 100%;
+    background: #fff;
+    padding-top: 40px;
+    z-index: 999;
+    box-shadow: -2px 3px 17px 0px #000;
+    transition: all 1s;
+    &.rightside__menu--close {
+      transform: translateX(500%);
+    }
+  }
+  &__menu-close {
+    background: transparent;
+    bottom: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 60px;
+  }
+  &__menu-content {
+    text-align: center;
+    max-width: 485px;
+    margin: 0 auto;
+  }
+  &__menu-logo {
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+  &__menu-title {
+    color: $title;
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      margin: 0 auto;
+      height: 1px;
+      background: #6d7278;
+    }
+  }
+  &__menu-text {
+    margin-bottom: 75px;
+  }
+  &__menu-images {
+    max-width: 485px;
+  }
+}
+
 // .wrapper {
 // }
 // .main {
@@ -133,26 +198,26 @@
     &::before {
       content: "";
       position: absolute;
-      top: 3px;
+      top: 2px;
       left: 0;
       width: 16px;
       height: 16px;
     }
   }
-  &__footer__social-link--facebook::before {
-    background: url(../images/footer/facebook.svg);
+  .footer__social-link--facebook::before {
+    background: url(../images/footer/facebook.svg) no-repeat center;
   }
-  &__footer__social-link--instagram::before {
-    background: url(../images/footer/instagram.svg);
+  .footer__social-link--instagram::before {
+    background: url(../images/footer/instagram.svg) no-repeat center;
   }
-  &__footer__social-link--pinterest::before {
-    background: url(../images/footer/pinterest.svg);
+  .footer__social-link--pinterest::before {
+    background: url(../images/footer/pinterest.svg) no-repeat center;
   }
-  &__footer__social-link--whatsapp::before {
-    background: url(../images/footer/whatsapp.svg);
+  .footer__social-link--whatsapp::before {
+    background: url(../images/footer/whatsapp.svg) no-repeat center;
   }
-  &__footer__social-link--youtube::before {
-    background: url(../images/footer/youtube.svg);
+  .footer__social-link--youtube::before {
+    background: url(../images/footer/youtube.svg) no-repeat center;
   }
   &__menu {
     margin-right: 60px;

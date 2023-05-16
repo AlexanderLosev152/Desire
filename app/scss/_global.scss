@@ -6,6 +6,9 @@ body {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: $title;
+  // убрать горизонтальный скролл
+  overflow-x: hidden;
+  min-width: 320px;
 }
 
 // font-family: 'Montserrat', sans-serif;
